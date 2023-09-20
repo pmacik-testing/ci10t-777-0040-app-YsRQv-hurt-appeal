@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hbvy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0040-tenant/ci10t-777-0040-app/devfile-sample-hbvy@sha256:4ff51aa3cb2a1f8ad43bf764e89f12e950ee34792bfe4cb9519d9fd362c430de
+        name: my-nodejs
+        resources: {}
+status: {}
